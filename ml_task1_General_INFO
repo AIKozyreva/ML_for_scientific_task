@@ -14,4 +14,5 @@ Categorical Cross-Entropy - measures the dissimilarity between the predicted pro
 
 If your aim is prediction the class value based on balanced representation, the F1 score helps in evaluating the model's performance in handling imbalanced classes, while categorical cross-entropy guides the model to minimize the difference between predicted and actual distributions of nucleotide variants.
 
-3) Exploratory Data Analysis (EDA): https://colab.research.google.com/drive/1aO7WL2Jl7x06fMaBp3LJMUGaF7y6ApfT?usp=sharing 
+3) Exploratory Data Analysis (EDA): 
+Google Colab: https://colab.research.google.com/drive/1aO7WL2Jl7x06fMaBp3LJMUGaF7y6ApfT?usp=sharing 
