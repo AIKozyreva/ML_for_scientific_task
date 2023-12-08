@@ -1,0 +1,17 @@
+Ссылка на текст задания: https://gist.github.com/pacifikus/b45dd720ec74d15a8e7e2b9959024c5e 
+
+1) Сформулировать постановку задачи, которую хочется решать в рамках курса: Релизовать предиктор для N+1 символа в N-символьной последовательности на основе распределения символов различных классов в этой последовательности.
+ML-задача: мульклассовая классификация
+Набор данных: список строк случайной величины (до 500 символов), суммарно все строки покрывают входной файл .fasta , который содержал некоторую нуклеотидную последовательность.
+
+2) Выбранная метрика: F1-score - combines both precision and recall into a single value. F1=2*((P*R)/(P+R)), where P-precision, R-Recall.
+
+Precision - measures the accuracy of positive predictions, i.e., the ratio of correctly predicted positive observations to the total predicted positives.
+Recall - also known as sensitivity, it measures the ratio of correctly predicted positive observations to the actual positives.
+
+Функция потерь - величина отклонения от нормального распределения частот встречаемости символа этого класса в строке. (т.е все символы должны быть распределены в строке +-равномерно, если это не так, и частота одного символа стала выбиваться после нашего предсказания - это признак "плохого" предсказания). В задачах мультиклассовой классификации используют Categorical Cross-Entropy. 
+Categorical Cross-Entropy - measures the dissimilarity between the predicted probability distribution and the true probability distribution of the classes.
+
+If your aim is prediction the class value based on balanced representation, the F1 score helps in evaluating the model's performance in handling imbalanced classes, while categorical cross-entropy guides the model to minimize the difference between predicted and actual distributions of nucleotide variants.
+
+3) Exploratory Data Analysis (EDA): https://colab.research.google.com/drive/1aO7WL2Jl7x06fMaBp3LJMUGaF7y6ApfT?usp=sharing 
