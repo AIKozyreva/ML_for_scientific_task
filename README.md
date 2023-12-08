@@ -1,0 +1,2 @@
+# ML_for_scientific_task
+ITMO_2023course_master's_1_term/МО_для_анализа_научных_данных
